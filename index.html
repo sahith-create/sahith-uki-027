@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+            background-image: url('./Assets/images/carousel-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 1200px;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .avg {
+            height: 5%;
+            width: 5%;
+        }
+
+        /* Navbar */
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+       
+
+
+
+        /* Buttons */
+        .btn-warning {
+            background-color: #ff9800;
+            border-color: #ff9800;
+            color: white;
+        }
+        .btn-warning:hover {
+            background-color: #e68900;
+            border-color: #e68900;
+        }
+        .btn-outline-warning {
+            color: #ff9800;
+            border-color: #ff9800;
+        }
+        .btn-outline-warning:hover {
+            background-color: #ff9800;
+            color: rgb(223, 74, 15);
+        }
+
+        
+      
+        .small-img {
+            position: absolute;
+            top: -20px;
+            right: 75px;
+            width: 200px;
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+          
+         
+        .pqr {
+            background-image: url('./Assets/images/www.jpg');
+            height: 500px;
+            opacity: 0.6;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eb82a5;
+        }
+        .carousel-item {
+            padding: 20px;
+        }
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #888;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+   
+       
+    </style>
+</head>
+<body><!--section 1-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img class="avg" src="./Assets/images/Copy of finallogo.png" alt="Logo">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dee">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#poi">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aws">Menu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="CONTACT.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-warning d-flex align-items-center ms-3" href="#">SignUp <span class="ms-1">➔</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section --><!--section 2-->
+    <section class="hero-section d-flex align-items-center justify-content-center"  id="home" style="background-image: url('./Assets/images/about-1.jpg'); width: 100%; background-repeat: repeat; background-size: cover;
+            height: 1000px;">
+        <div class="container text-center hero-content">
+            <h1 class="fw-bold">From Our Kitchen to Your Table, Fresh Every Day</h1>
+            <p>Enjoy the goodness of fresh, flavorful food delivered straight to you.</p>
+            <a href="#" class="btn btn-warning">Explore More <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section --><!--section 3-->
+    <section class="container my-5" id="dee" >
+        <div class="row align-items-center">
+            <div class="col-md-6 position-relative">
+                <img src="./Assets/images/about-1.jpg" class="img-fluid rounded shadow" alt="Food" style="height: 500px; width: 500px;">
+                <img src="./Assets/images/about-2.jpg" class="small-img" alt="Small Dish">
+            </div>
+            <div class="col-md-6">
+                <span class="badge bg-warning text-dark">About Us</span>
+                <h2 class="fw-bold mt-3">Join us on our journey to celebrate the art of food.</h2>
+                <p class="p-4 border rounded bg-light" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);">You don’t have to cook fancy or complicated masterpieces – just good food from fresh ingredients. <br><strong>- Julia Child</strong></p>
+                <p>We use only the freshest ingredients, sourced locally whenever possible, to create dishes that are as wholesome as they are delicious. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laboriosam veritatis dicta cumque explicabo illo deleniti suscipit quasi, unde molestias.</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-warning">Learn More</a>
+                    <a href="#" class="btn btn-outline-warning">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section4 -->
+    <section id="aws" style="background-color: blanchedalmond; height: 800px;">
+        <h5 style="color: orangered; text-align: center;">Our Services</h5>
+        <h3 style="text-align: center;">Discover a variety of dishes crafted with care</h3>
+        <div class="container mt-3">
+            <div class="row justify-content-center" style="margin-right: 25px; ">
+                <button class="col-sm-2 btn" style="border: 1px solid brown; color: white; background-color: orangered;">All</button>
+                <button class="col-sm-2 btn" style="border: 1px solid brown; color: orangered;">Vegetarian</button>
+                <button class="col-sm-2 btn" style="border: 1px solid brown; color: orangered;">Beverages</button>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="border-top: 10px solid orangered;">
+                        <button type="button" class="btn btn-warning">Rice & Curry</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary Card Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="./Assets/images/courses-1.jpg" class="card-img-top" alt="Rice & Curry">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="border-top: 10px solid orangered;">
+                        <button type="button" class="btn btn-warning">Koththu</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary Card Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="./Assets/images/courses-3.jpg" class="card-img-top" alt="Koththu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="border-top: 10px solid orangered;">
+                        <button type="button" class="btn btn-warning">Mango Juice</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary Card Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="./Assets/images/beverage-1.jpg" class="card-img-top" alt="Mango Juice">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="border-top: 10px solid orangered;">
+                        <button type="button" class="btn btn-warning">Milk Tea</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary Card Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="./Assets/images/beverage-2.jpg" class="card-img-top" alt="Milk Tea">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details Section  section 5-->
+    <section id="poi">
+        <h1 style="text-align: center;">Learn More About Our Services</h1>
+        <div class="container mt-3 d-flex justify-content-center gap-4" style="padding-left: 0;">
+            <div class="card shadow-lg" style="width: 350px;">
+                <img class="card-img-top" src="./Assets/images/icon-1.png" alt="Service 1" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text. John Doe is an architect and engineer.</p>
+                    <a href="#" class="btn" style="background-color: orangered; color: white;">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width: 350px;">
+                <img class="card-img-top" src="./Assets/images/icon-2.png" alt="Service 2" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text. John Doe is an architect and engineer.</p>
+                    <a href="#" class="btn" style="background-color: orangered; color: white;">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width: 350px;">
+                <img class="card-img-top" src="./Assets/images/icon-3.png" alt="Service 3" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text. John Doe is an architect and engineer.</p>
+                    <a href="#" class="btn" style="background-color: orangered; color: white;">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section   section 6-->
+    <section class="pqr">
+        <h2>A Journey of Flavors, Crafted with Passion</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos labore sint, culpa reprehenderit pariatur earum sit ea officia sunt, voluptate esse, beatae cumque cum amet veritatis dignissimos quia quod.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, fugiat laborum alias laudantium sit autem illum aperiam soluta asperiores ut recusandae ad sapiente maxime optio distinctio sed consequatur fuga quam.</p>
+        <button class="btn btn-secondary" style="margin: 20px; padding: 10px;">Create Now</button>
+    </section>
+
+    <!-- Team Section  7-->
+    <section style="height: 500px; background-color: aliceblue;">
+        <h5 style="color: orangered; text-align: center; padding: 20px; border-radius: 30px;">Team Members</h5>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3 text-center">
+                    <img class="card-img-top" src="./Assets/images/team-1.jpg" style="height: 300px;" alt="Velvet Dawn">
+                    <p>Velvet Dawn</p>
+                    <p style="color: orangered;">Sous Chef</p>
+                </div>
+                <div class="col-3 text-center">
+                    <img class="card-img-top" src="./Assets/images/team-2.jpg" style="height: 300px;" alt="Nova Drift">
+                    <p>Nova Drift</p>
+                    <p style="color: orangered;">Sous Chef</p>
+                </div>
+                <div class="col-3 text-center">
+                    <img class="card-img-top" src="./Assets/images/team-3.jpg" style="height: 300px;" alt="Blaze Storm">
+                    <p>Blaze Storm</p>
+                    <p style="color: orangered;">Sous Chef</p>
+                </div>
+                <div class="col-3 text-center">
+                    <img class="card-img-top" src="./Assets/images/team-4.jpg" style="height: 300px;" alt="Crimson Vale">
+                    <p>Crimson Vale</p>
+                    <p style="color: orangered;">Sous Chef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section  section 8-->
+    <section class="testimonial-section">
+        <h6 class="text-warning">Feedbacks</h6>
+        <h2 class="fw-bold">Trusted By Thousands Of People</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Assets/images/testimonial-1.jpg" class="testimonial-img" alt="David Lee">
+                    <p class="text-muted">"The cheese koththu was a delightful twist on the classic dish! The gooey melted cheese beautifully blended with the flavors of the koththu."</p>
+                    <em>David Lee</em>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/images/testimonial-2.jpg" class="testimonial-img" alt="Sarah Johnson">
+                    <p class="text-muted">"Absolutely loved the flavors! The spices were perfectly balanced, and the texture was just right."</p>
+                    <em>Sarah Johnson</em>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/images/testimonial-3.jpg" class="testimonial-img" alt="Michael Smith">
+                    <p class="text-muted">"One of the best meals I've ever had! Highly recommend to anyone looking for an authentic taste."</p>
+                    <em>Michael Smith</em>
+                </div>carousel-item active
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer  section 9 --> 
+    <section style="background-color: rgb(8, 1, 44);">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-3">
+                    <h3 style="color: white;">Home Bites</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, facilis. Quo ea, assumenda optio officia totam enim provident libero eligendi. Officiis nesciunt obcaecati placeat voluptatum iusto quidem similique eveniet dicta.</p>
+                    <p>
+                        <i class="bi bi-skype"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h3 style="color: white;">Address</h3>
+                    <p><i class="bi bi-geo-alt-fill"></i> 123 Street, Sri Lanka</p>
+                    <p><i class="bi bi-telephone-fill"></i> 077 123 4587</p>
+                    <p><i class="bi bi-envelope-at-fill"></i> info@uki.com</p>
+                </div>
+                <div class="col-3">
+                    <h3 style="color: white;">Quick Links</h3>
+                    <p><i class="bi bi-chevron-right"></i> About Us</p>
+                    <p><i class="bi bi-chevron-right"></i> Contact Us</p>
+                    <p><i class="bi bi-chevron-right"></i> Our Services</p>
+                    <p><i class="bi bi-chevron-right"></i> Terms & Conditions</p>
+                    <p><i class="bi bi-chevron-right"></i> Support</p>
+                </div>
+                <div class="col-3">
+                    <h3 style="color: white;">Newsletter</h3>
+                    <p>Where every bite feels like home</p>
+                </div>
+            </div>
+            <hr>
+            <footer class="text-center py-3">
+                <p style="color: white;"><i class="bi bi-browser-edge"></i> HomeBites, All Rights Reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
